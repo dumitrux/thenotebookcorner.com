@@ -17,13 +17,12 @@
 	"features": {
 		"ghcr.io/astronomer/devcontainer-features/astro-cli:1": {},
 		"ghcr.io/devcontainers/features/node:1": {}
-	}
+	},
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "npm install"
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
