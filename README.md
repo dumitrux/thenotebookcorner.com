@@ -10,6 +10,8 @@ The Notebook Corner website source code.
 > [!IMPORTANT]
 > Temporally at: https://dumitrux.github.io/thenotebookcorner.com
 
+## Table of Contents <!-- omit in toc -->
+
 - [Development](#development)
   - [Astro Starter Kit: Basics](#astro-starter-kit-basics)
     - [🚀 Project Structure](#-project-structure)
