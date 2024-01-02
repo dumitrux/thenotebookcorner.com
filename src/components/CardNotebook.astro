@@ -1,0 +1,58 @@
+---
+interface Props {
+    id: string;
+    name: string;
+    details: string;
+    imagePath: string;
+    amazonUri: string;
+}
+
+const { id, name, details, imagePath, amazonUri } = Astro.props;
+---
+
+<a
+    href={`/notebook/${id}`}
+    class="rounded-lg border shadow-md bg-gray-800 border-gray-700 hover:scale-105 hover:bg-gray-700 hover:border-gray-500 transition flex flex-col"
+>
+    <picture class="flex justify-center p-4">
+        <img
+            class="mb-5 rounded-lg"
+            src={imagePath}
+            alt={`Notebook image ${id}`}
+        />
+    </picture>
+
+    <header class="p-4 flex-grow">
+        <span
+            class="text-xs font-semibold mr-2 px-2.5 py-0.5 rounded bg-yellow-200 text-black-500"
+        >
+            <!-- <svg
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#2c3e50"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                    d="M17 12.5a15.198 15.198 0 0 1 -7.37 1.44a14.62 14.62 0 0 1 -6.63 -2.94"
+                ></path>
+                <path
+                    d="M19.5 15c.907 -1.411 1.451 -3.323 1.5 -5c-1.197 -.773 -2.577 -.935 -4 -1"
+                ></path>
+            </svg> -->
+            See in Amazon</span
+        >
+
+        <h2 class="my-2 text-2xl font-bold tracking-tighter text-white">
+            Notebook {name}
+        </h2>
+
+        <p class="mb-4 font-light text-gray-400">
+            {details.length > 100 ? details.slice(0, 50) + "..." : details}
+        </p>
+    </header>
+</a>

@@ -1,0 +1,21 @@
+---
+import CardNotebook from "./CardNotebook.astro";
+
+import { notebooks } from "../data/notebooks.js"
+
+console.log(notebooks);
+---
+
+<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    {
+        notebooks.map((notebook) => (
+            <CardNotebook
+                id={notebook.id}
+                name={notebook.name}
+                imagePath={notebook.imagePath}
+                details={notebook.details}
+                amazonUri={notebook.amazonUri}
+            />
+        ))
+    }
+</div>

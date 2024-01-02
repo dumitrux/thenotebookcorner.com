@@ -5,9 +5,20 @@ The Notebook Corner website source code.
 > A Notebook for every you.
 > Reading journal, meeting notes, bullet journal, diary, blog, libreta, note taking and notes.
 
+- [Development](#development)
+  - [Astro Starter Kit: Basics](#astro-starter-kit-basics)
+    - [🚀 Project Structure](#-project-structure)
+    - [🧞 Commands](#-commands)
+- [Deployment](#deployment)
+
+
 ## Development
 
-Using [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/)
+Tools:
+
+- [Astro](https://astro.build/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Tabler Icons](https://tablericons.com/)
 
 ```bash
 npm create astro@latest
@@ -71,3 +82,8 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+
+## Deployment
+
+[https://docs.astro.build/en/guides/deploy/github/](https://docs.astro.build/en/guides/deploy/github/)

@@ -1,4 +1,5 @@
 ---
+import HeaderButton from "../components/HeaderButton.astro";
 console.log("javascript");
 ---
 
@@ -15,8 +16,28 @@ console.log("javascript");
     <nav
         class="flex flex-col items-center justify-between w-full text-center md:flex-row"
     >
-        <a class="text-white" href="/">Home</a>
-        <a class="text-white" href="/default">Default</a>
-        <a class="text-white" href="/about">About</a>
+        <HeaderButton class="text-white" href="/">Home</HeaderButton>
+        <HeaderButton class="text-white" href="/default">Default</HeaderButton>
+        <HeaderButton class="text-white" href="/about">
+            <svg
+                slot="before"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#2c3e50"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 9h.01"></path>
+                <path d="M11 12h1v4h1"></path>
+                <path
+                    d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z"
+                ></path>
+            </svg>
+             About
+        </HeaderButton>
     </nav>
 </header>
