@@ -5,10 +5,11 @@ console.log("javascript");
 
 <header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
     <div class="mx-auto text-center mb-8 lg:mb-16">
-        <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white">
+        <!-- <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white">
             The Notebook Corner 📓
-        </h2>
-        <p class="font-light text-gray-500 sm-text-xl dark:text-gray-400">
+        </h2> -->
+        <h1 class="mb-4 text-5xl tracking-tight font-extrabold text-white">The <span class="text-gradient">Notebook</span> Corner📓</h1>
+        <p class="font-light text-gray-800 text-xl dark:text-gray-100">
             A Notebook for every you.
         </p>
     </div>
@@ -16,9 +17,9 @@ console.log("javascript");
     <nav
         class="flex flex-col items-center justify-between w-full text-center md:flex-row"
     >
-        <HeaderButton class="text-white" href="/">Home</HeaderButton>
-        <HeaderButton class="text-white" href="/default">Default</HeaderButton>
-        <HeaderButton class="text-white" href="/about">
+        <HeaderButton href="/thenotebookcorner.com">Home</HeaderButton>
+        <HeaderButton href="/thenotebookcorner.com/default">Default</HeaderButton>
+        <HeaderButton href="/thenotebookcorner.com/about">
             <svg
                 slot="before"
                 width="44"
@@ -41,3 +42,31 @@ console.log("javascript");
         </HeaderButton>
     </nav>
 </header>
+
+<style>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	/* h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	} */
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+</style>
