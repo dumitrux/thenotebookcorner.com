@@ -6,5 +6,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://dumitrux.github.io',
-  // base: '/thenotebookcorner.com',
+  base: '/thenotebookcorner.com'
 });
