@@ -93,5 +93,5 @@ All commands are run from the root of the project, from a terminal:
 
 ## Deployment
 
-[Deploy your Astro Site to GitHub Pages](https://docs.astro.build/en/guides/deploy/github/)
-[Dev - How to host a Hugo or Next.js site on GitHub Pages](https://dev.to/github/how-to-host-a-static-nextjs-site-on-github-pages-4pe0)
+- [Deploy your Astro Site to GitHub Pages](https://docs.astro.build/en/guides/deploy/github/)
+- [Dev - How to host a Hugo or Next.js site on GitHub Pages](https://dev.to/github/how-to-host-a-static-nextjs-site-on-github-pages-4pe0)
