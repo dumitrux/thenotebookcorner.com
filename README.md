@@ -5,11 +5,6 @@ The Notebook Corner website source code.
 > A Notebook for every you.
 > Reading journal, meeting notes, bullet journal, diary, blog, libreta, note taking and notes.
 
-<!-- NOTE, TIP, CAUTION, WARNING -->
-
-> [!IMPORTANT]
-> Temporally at: https://dumitrux.github.io/thenotebookcorner.com
-
 ## Table of Contents <!-- omit in toc -->
 
 - [Development](#development)
@@ -95,3 +90,8 @@ All commands are run from the root of the project, from a terminal:
 
 - [Deploy your Astro Site to GitHub Pages](https://docs.astro.build/en/guides/deploy/github/)
 - [Dev - How to host a Hugo or Next.js site on GitHub Pages](https://dev.to/github/how-to-host-a-static-nextjs-site-on-github-pages-4pe0)
+
+<!-- NOTE, TIP, CAUTION, WARNING
+
+> [!IMPORTANT]
+> Example -->
