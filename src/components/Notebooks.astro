@@ -3,20 +3,52 @@ import CardNotebook from "./CardNotebook.astro";
 
 const notebooks = [
     {
-        id: "journal",
-        name: "Journal",
-        imagePath: "/reading_journal_1.jpg",
+        id: "mensual_semanal_diaria",
+        name: "AGENDA MENSUAL, SEMANAL Y DIARIA",
+        imagePath: "/mensual_semanal_diaria.png",
         details:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend sodales nibh, non porttitor urna tristique ac. Aliquam erat volutpat. Aenean sed arcu et orci.",
-        amazonUri: "Button 1",
+            "Deja de procrastinar, optimiza tu tiempo y saca adelante tus \
+            proyectos, tareas y hábitos con este Planificador Mensual, \
+            Semanal y Diario sin fechas, para que puedas empezarlo cuando \
+            quieras y tengas todo lo esencial en una sola libreta: \
+            recordatorios, to do list, prioridades, etc.",
+        amazonURL: "https://www.amazon.es/dp/B0CRRNP69G",
     },
     {
-        id: "meeting",
-        name: "Meeting Notes",
-        imagePath: "/reading_journal_2.jpg",
+        id: "cuaderno_lecturas",
+        name: "CUADERNO DE LECTURA: DIARIO DE REGISTRO DE LECTURAS",
+        imagePath: "/cuaderno_lecturas.png",
         details:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam erat, consectetur ut porta sed, sollicitudin sit amet massa. Nunc vitae suscipit dolor. Aliquam rhoncus.",
-        amazonUri: "Button 1",
+            "\“Solo un capítulo más....\" \
+            Si esa es la mentira más repetida por tu mente cada vez que lees un buen libro.... este cuaderno de lecturas es para ti.",
+        amazonURL: "https://www.amazon.es/dp/B0CRKX9N77",
+    },
+    {
+        id: "cuaderno_lecturas_2",
+        name: "CUADERNO DE LECTURA: MIS AVENTURAS LITERARIAS",
+        imagePath: "/cuaderno_lecturas_2.png",
+        details:
+            "\“Solo un capítulo más....\" \
+            Si esa es la mentira más repetida por tu mente cada vez que lees un buen libro.... este cuaderno de lecturas es para ti.",
+        amazonURL: "https://www.amazon.es/dp/B0BMJXR7Y1",
+    },
+    {
+        id: "cuaderno_lectura",
+        name: "CUADERNO DE LECTURA: MIS AVENTURAS LITERARIAS",
+        imagePath: "/cuaderno_lectura.png",
+        details:
+            "\“Solo un capítulo más....\" \
+            Si esa es la mentira más repetida por tu mente cada vez que lees un buen libro.... este cuaderno de lecturas es para ti.",
+        amazonURL: "https://www.amazon.es/dp/B0BLYL9D42",
+    },
+    {
+        id: "cuaderno_lectura_2",
+        name: "CUADERNO DE LECTURA: MIS AVENTURAS LITERARIAS",
+        imagePath: "/cuaderno_lectura_2.png",
+        details:
+            "\“Solo un capítulo más....\" \
+            Si esa es la mentira más repetida por tu mente cada vez que lees un buen libro.... este cuaderno de lecturas es para ti.",
+        amazonURL: "https://www.amazon.es/dp/B0BRLZX1L9",
     },
 ];
 
@@ -31,7 +63,7 @@ const notebooks = [
                 name={notebook.name}
                 imagePath={notebook.imagePath}
                 details={notebook.details}
-                amazonUri={notebook.amazonUri}
+                amazonURL={notebook.amazonURL}
             />
         ))
     }
