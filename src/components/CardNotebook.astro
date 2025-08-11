@@ -12,7 +12,7 @@ const { id, name, details, imagePath, amazonURL } = Astro.props;
 
 <div>
     <a
-        href={`/notebook/${id}`}
+        href={`/thenotebookcorner.com/notebook/${id}`}
         class="rounded-lg border shadow-md bg-gray-800 border-gray-700 hover:scale-105 hover:bg-gray-700 hover:border-gray-500 transition flex flex-col"
     >
         <picture class="flex justify-center p-4">
@@ -59,7 +59,7 @@ const { id, name, details, imagePath, amazonURL } = Astro.props;
 
         <a
             href={amazonURL}
-            class="text-l text-center font-semibold mr-2 px-2.5 py-0.5 rounded bg-yellow-200 text-black-500 block"
+            class="text-lg text-center font-semibold mr-2 px-2.5 py-0.5 rounded bg-yellow-200 text-gray-800 block"
         >
             See in Amazon
         </a>
